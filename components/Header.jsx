@@ -1,7 +1,6 @@
 import React from 'react'
 import {
     SignInButton,
-    SignUpButton,
     SignedIn,
     SignedOut,
     UserButton,
