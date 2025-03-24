@@ -14,8 +14,8 @@ export async function sendEmail({ to, subject, html }) {
   });
 
   try {
-    console.log("Sending email to:", to);
-    console.log("Subject:", subject);
+    // console.log("Sending email to:", to);
+    // console.log("Subject:", subject);
 
     const mailOptions = {
       from: `Finance App <${process.env.EMAIL_USER}>`, // Use your verified domain email
@@ -25,7 +25,7 @@ export async function sendEmail({ to, subject, html }) {
     };
 
     const info = await transporter.sendMail(mailOptions);
-    console.log("Nodemailer response", info);
+    // console.log("Nodemailer response", info);
     return { success: true, data: info };
   } catch (error) {
     console.error("Failed to send email:", error);
