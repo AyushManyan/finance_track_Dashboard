@@ -107,7 +107,7 @@ const AddTranscationForm = ({
   );
 
   const handleScanComplete = (scannedData) => {
-    console.log("Scanned data:", scannedData);
+    // console.log("Scanned data:", scannedData);
 
     if (scannedData) {
       setValue("amount", scannedData.amount.toString());

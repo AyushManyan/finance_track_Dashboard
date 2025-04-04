@@ -30,7 +30,7 @@ export async function createAccount(data){
             where: { clerkUserId: userId },
           });
 
-        console.log('User:', user);
+        // console.log('User:', user);
         
         if(!user) throw new Error('user not found');
 

@@ -55,7 +55,7 @@ const CreateAccountDrawer = ({ children }) => {
     }, [error]);
 
     const onSubmit = async (data) => {
-        console.log('Form data:', data); // Add logging to debug
+        // console.log('Form data:', data); // Add logging to debug
         await createAccountFn(data);
         reset(); // Reset form after submission
         setOpen(false); // Close drawer after submission
@@ -79,7 +79,7 @@ const CreateAccountDrawer = ({ children }) => {
                         <div className='space-y-2'>
                             <label htmlFor="type" className='text-sm font-medium'>Account Type</label>
                             <Select onValueChange={(value) => setValue('type', value)} defaultValue={watch('type')}>
-                                <SelectTrigger id="type">
+                                <SelectTrigger id="type" className="w-full">
                                     <SelectValue placeholder="Acc. type" />
                                 </SelectTrigger>
                                 <SelectContent>
